@@ -4,7 +4,7 @@ Interaktív webfejlesztés kurzus. Öt leckén át egy működő alkalmazást é
 **Feladatbank**ot, ami matekfeladatokat listáz, keres és tárol.
 
 Minden lecke egy labor: elolvasod, közben írod a kódot, a végén van valami, ami működik.
-A lecke végén kapsz egy önálló feladatot, amihez nincs megoldás, azt neked kell megcsinálni.
+Utána kapsz egy önálló feladatot, amit a saját ötleted szerint csinálsz meg.
 
 ## Kinek szól?
 

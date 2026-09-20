@@ -44,16 +44,16 @@ Hasonlítsd össze a kódot az eredménnyel. Mit veszel észre?
 - A `<h1>` nagy, vastag betűvel jelent meg, ez egy **címsor**.
 - A két `<p>` külön sorba került, és van köztük egy kis hely, ezek **bekezdések**.
 - A `<br />` sortörést csinált, de a két sor közé nem tett akkora helyet, mint a bekezdések
-közé.
+  közé.
 - A kacsacsőrös részek maguk **nem látszanak** az oldalon. Ezek nem a tartalom, hanem a
-tartalomról szóló információ.
+  tartalomról szóló információ.
 
 > Ebben a leckében mentés után **frissítsd a böngészőt** (`F5`), különben nem látod a
 > változást. A körforgás végig ez lesz: írsz, mentesz, frissítesz, megnézed.
 
 ## 2. HTML dióhéjban
 
-Amit írtunk, az HTML: *HyperText Markup Language*. Egy HTML dokumentum **elemekből** áll:
+Amit írtunk, az HTML: _HyperText Markup Language_. Egy HTML dokumentum **elemekből** áll:
 
 ```html
 <típus>szöveg vagy további elemek</típus>
@@ -64,7 +64,7 @@ Amit írtunk, az HTML: *HyperText Markup Language*. Egy HTML dokumentum **elemek
 - A két tag között vannak az elem **gyerekei**: további elemek vagy egyszerű szöveg.
 - A **záró tag** ugyanaz, csak a típus előtt egy perjellel: `</p>`
 - Ha egy elemnek nem lesz gyereke, rövidebben is írható: `<br />`. Egy sortörésbe nyilván
-nem akarunk semmit beletenni.
+  nem akarunk semmit beletenni.
 
 ### Attribútumok
 
@@ -83,7 +83,7 @@ Próbáld ki: másold a fájl végére ezt a két sort.
 
 - Az `<a>` egy **link** (anchor). A `href` attribútum mondja meg, hova vezet.
 - Az `<img>` egy **kép**. A `src` az elérési út, az `alt` pedig a szöveges leírás arra az
-esetre, ha a kép nem tölt be, és ezt olvassa fel a képernyőolvasó a látássérülteknek is.
+  esetre, ha a kép nem tölt be, és ezt olvassa fel a képernyőolvasó a látássérülteknek is.
 
 Nem mindegy, melyik elemhez milyen attribútumot adsz: mindegyiknek megvan a maga készlete.
 
@@ -126,13 +126,11 @@ Az oldal maga alig változott, viszont nézd meg a böngészőlap fülét: most 
 
 Amit a `<head>`-be tettünk:
 
-
 | Elem                         | Mire jó                                                                 |
 | ---------------------------- | ----------------------------------------------------------------------- |
 | `<meta charset="UTF-8">`     | Karakterkódolás. **Enélkül az ékezetes betűk krikszkrakszok lehetnek.** |
 | `<meta name="viewport" ...>` | Mobilon ettől lesz értelmes az oldal mérete                             |
 | `<title>`                    | A böngészőlap neve                                                      |
-
 
 Az `<html lang="hu">` pedig megmondja, hogy magyar nyelvű az oldal. Ezt a keresők és a
 képernyőolvasók használják.
@@ -145,7 +143,6 @@ csinálni belőle az egész oldalt, csak épp senki nem tudná, melyik doboz mi.
 Ezért van a HTML-ben egy csomó elem, ami **ugyanúgy néz ki, mint egy `div`, de jelent is
 valamit**:
 
-
 | Elem        | Mit jelent                                                         |
 | ----------- | ------------------------------------------------------------------ |
 | `<header>`  | Az oldal (vagy egy szakasz) fejléce                                |
@@ -154,7 +151,6 @@ valamit**:
 | `<section>` | Egy önálló szakasz a tartalomban                                   |
 | `<article>` | Egy önmagában is megálló tartalomegység, például egy feladatkártya |
 | `<footer>`  | Lábléc                                                             |
-
 
 Ez nem szőrszálhasogatás: ebből tudja a képernyőolvasó, hogy átugorhatja a navigációt, és
 ebből tudja a Google, hogy mi az oldal lényege.
@@ -194,9 +190,9 @@ Csúnya, de **szerkezete van**.
 Két új dolog:
 
 - A `href="#"` egy link, ami sehova nem visz. Ez a szokásos helykitöltő, amíg nincs meg az
-igazi cél.
+  igazi cél.
 - A `<span>` a `<div>` soron belüli megfelelője: egy jelentés nélküli doboz, amivel a
-szöveg egy darabját tudjuk megfogni, hogy később megstílusozzuk.
+  szöveg egy darabját tudjuk megfogni, hogy később megstílusozzuk.
 
 > Nyisd meg a fejlesztői eszközöket (`F12`), és menj az `Elements` fülre. Ott a te HTML-edet
 > látod fa formában, kinyitható ágakkal. Ha ráviszed az egeret egy elemre, a böngésző
@@ -208,7 +204,7 @@ szöveg egy darabját tudjuk megfogni, hogy később megstílusozzuk.
 ## 5. CSS: hogyan nézzen ki
 
 A HTML megmondja, **mi** van az oldalon. A CSS megmondja, **hogy nézzen ki**. A neve
-*Cascading Style Sheets*.
+_Cascading Style Sheets_.
 
 Hozz létre a `1-start/` mappában egy `styles.css` nevű fájlt, és tedd bele ezt:
 
@@ -240,7 +236,7 @@ selector {
 ```
 
 - A **selector** megmondja, **mire** vonatkozik a szabály. A `body` az összes `<body>`
-elemre, amiből egy van.
+  elemre, amiből egy van.
 - Utána kapcsos zárójelben jönnek a **tulajdonság: érték** párok, pontosvesszővel elválasztva.
 
 ### Selectorok
@@ -398,7 +394,6 @@ Egymás mellé kerültek.
 A [`display: flex`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout) azt mondja: **ennek az elemnek a gyerekeit rendezd sorba**. Nem magát az
 elemet változtatja meg, hanem azt, hogyan viselkednek benne a gyerekei.
 
-
 | Tulajdonság       | Mit csinál                                                     |
 | ----------------- | -------------------------------------------------------------- |
 | `flex-direction`  | A fő tengely iránya: `row` egymás mellé, `column` egymás alá   |
@@ -406,7 +401,6 @@ elemet változtatja meg, hanem azt, hogyan viselkednek benne a gyerekei.
 | `justify-content` | Igazítás a fő tengely mentén (`center`, `space-between`, ...)  |
 | `align-items`     | Igazítás a fő tengelyre merőlegesen (`center`, `stretch`, ...) |
 | `flex-wrap`       | `wrap` értékkel új sorba törnek a gyerekek, ha nem férnek ki   |
-
 
 > Ez csak a leggyakrabban használt öt. A flexbox teljes leírása egy oldalon, ábrákkal
 > minden tulajdonsághoz:
@@ -447,7 +441,6 @@ rakd össze a stílust apró, egy dolgot csináló osztályokból**, közvetlen�
 
 Ezek az osztályok ilyenek:
 
-
 | Tailwind osztály | Amit helyettesít          |
 | ---------------- | ------------------------- |
 | `p-4`            | `padding: 16px`           |
@@ -456,7 +449,6 @@ Ezek az osztályok ilyenek:
 | `flex`           | `display: flex`           |
 | `gap-4`          | `gap: 16px`               |
 | `rounded-lg`     | `border-radius: 8px`      |
-
 
 Egy Tailwind-es kártya nyitótagja így néz ki:
 
@@ -470,8 +462,8 @@ külön van? A gyakorlatban viszont ez működik jól, és ezért:
 - **Nem kell nevet kitalálnod.** A `.kartya-cim` osztálynévről órákat lehet vitatkozni.
 - **Nem kell két fájl között ugrálnod.** Amit látsz, azt írod.
 - **Nem nő a végtelenségig.** Ahogy a projekt nő, a saját CSS fájlod egyre nagyobb lesz, és
-soha nem mered kitörölni belőle a szabályokat, mert nem tudod, ki használja még. A
-Tailwind osztályok ott élnek és halnak, ahol használod őket.
+  soha nem mered kitörölni belőle a szabályokat, mert nem tudod, ki használja még. A
+  Tailwind osztályok ott élnek és halnak, ahol használod őket.
 - **Konzisztens.** A `p-4` mindig 16px. Nem lesz az oldaladon 14, 15 és 16 pixeles térköz.
 
 ### Húzzuk be
@@ -532,9 +524,9 @@ kideríteni, mit csinál valami.
 A legtöbb Tailwind osztály végén egy szám van. Kétféle skála létezik:
 
 - **Méretek** (`p-4`, `gap-2`, `mb-3`): a szám négyszerese pixelben. Tehát `p-4` = 16px,
-`gap-2` = 8px.
+  `gap-2` = 8px.
 - **Színek** (`slate-100`, `slate-600`, `emerald-800`): 50-től 950-ig, a világostól a
-sötétig. A `slate-100` majdnem fehér, a `slate-900` majdnem fekete.
+  sötétig. A `slate-100` majdnem fehér, a `slate-900` majdnem fekete.
 
 Ez a két skála a Tailwind lényegi haszna: kötött választékból dolgozol, ezért nem tudsz
 egymáshoz nem illő értékeket összerakni.
@@ -571,11 +563,11 @@ nem ér ki a széléig.
 Két dolog, amit érdemes megjegyezni:
 
 - A `mx-auto max-w-5xl px-6` hármas a web egyik legtöbbet használt mintája: legyen
-legfeljebb ilyen széles, azon belül középen, és legyen oldalt egy kis levegő, hogy
-mobilon ne érjen a képernyő széléhez. Ezért van a `header` belsejében egy külön `div`:
-a fehér háttér és az alsó keret a teljes szélességet fogja, a tartalom viszont nem.
+  legfeljebb ilyen széles, azon belül középen, és legyen oldalt egy kis levegő, hogy
+  mobilon ne érjen a képernyő széléhez. Ezért van a `header` belsejében egy külön `div`:
+  a fehér háttér és az alsó keret a teljes szélességet fogja, a tartalom viszont nem.
 - A `hover:text-slate-900` a linkeken azt jelenti, hogy amikor az egér fölöttük van,
-sötétebbek lesznek. Vidd rá az egeret, és nézd meg.
+  sötétebbek lesznek. Vidd rá az egeret, és nézd meg.
 
 Most a lábléc. Cseréld le a teljes `footer` blokkot erre:
 
@@ -613,7 +605,6 @@ A flexbox sorba rendez, a grid rácsba. A `grid` osztály ugyanúgy a szülőre 
 
 A leggyakrabban használt osztályok:
 
-
 | Osztály       | Mit csinál                                                       |
 | ------------- | ---------------------------------------------------------------- |
 | `grid`        | `display: grid`, ettől lesz rács az elem                         |
@@ -623,7 +614,6 @@ A leggyakrabban használt osztályok:
 | `grid-rows-2` | Sorok száma, ha nem akarod a böngészőre bízni                    |
 | `row-span-2`  | Ez az egyik gyerek két sor magas legyen                          |
 | `items-start` | A cellákon belül felülre igazítsa a tartalmat `stretch` helyett  |
-
 
 Az utolsó négyre ebben a leckében nem lesz szükséged, de jó tudni, hogy léteznek: ezekkel
 lehet olyan rácsot építeni, ahol az egyik elem nagyobb helyet kap, mint a többi.
@@ -681,7 +671,6 @@ pillanatra, és vidd rá megint az egeret. Érezhető a különbség.
 
 ### A gyakoriak
 
-
 | CSS                | Tailwind    | Mikor érvényes                           |
 | ------------------ | ----------- | ---------------------------------------- |
 | `:hover`           | `hover:`    | Az egér az elem fölött van               |
@@ -691,7 +680,6 @@ pillanatra, és vidd rá megint az egeret. Érezhető a különbség.
 | `:first-child`     | `first:`    | A testvérei közül az első                |
 | `:last-child`      | `last:`     | A testvérei közül az utolsó              |
 | `:nth-child(even)` | `even:`     | Páros sorszámú testvér                   |
-
 
 Az első négy **interaktív**: a felhasználótól függ. Az utolsó három **struktúra szerinti**:
 attól függ, hányadik az elem a testvérei között. Ez utóbbiakkal lehet például minden
@@ -872,11 +860,11 @@ A Tailwind nagyjából ezt a CSS-t állítja elő a három osztályunkból:
 Két dolog fontos ebben:
 
 - Az `sm:grid-cols-2` egy **sima osztálynév**, amiben véletlenül van egy kettőspont. A CSS  
-a kettőspontot máshogy használja, ezért került  elé egy visszaperjel: `.sm\:grid-cols-2`.
-Nem nyelvi elem tehát, csak egy név.
+  a kettőspontot máshogy használja, ezért került  elé egy visszaperjel: `.sm\:grid-cols-2`.
+  Nem nyelvi elem tehát, csak egy név.
 - Az előtag egy `@media` blokkba csomagolja a szabályt. Az ilyen feltételes CSS neve
-**media query**, és ez a reszponzív web alapja, Tailwind nélkül is. A Tailwind csak
-kényelmesebbé teszi: nem kell külön helyen megírnod, és nem kell nevet adnod neki.
+  **media query**, és ez a reszponzív web alapja, Tailwind nélkül is. A Tailwind csak
+  kényelmesebbé teszi: nem kell külön helyen megírnod, és nem kell nevet adnod neki.
 
 Innen látszik, miért **mobile-first** a Tailwind: a `@media (width >= 40rem)` csak
 **felfelé** szab feltételt. Az előtag nélküli osztály ezért mindig érvényes, a breakpointos
@@ -885,7 +873,6 @@ alapeset.
 
 A töréspontok:
 
-
 | Előtag | Ettől a szélességtől |
 | ------ | -------------------- |
 | `sm:`  | 40rem (640px)        |
@@ -893,7 +880,6 @@ A töréspontok:
 | `lg:`  | 64rem (1024px)       |
 | `xl:`  | 80rem (1280px)       |
 | `2xl:` | 96rem (1536px)       |
-
 
 > Ugyanez a logika nem csak az oszlopszámra működik, hanem bármelyik osztályra.
 > Írhatsz `text-sm md:text-base`-t, `p-4 lg:p-8`-at, vagy `hidden md:flex`-et, ha valamit
@@ -934,17 +920,16 @@ Csinálj egy saját oldalt szabadon választott témáról, ugyanezekkel az eszk
 ## Olvasmányok
 
 - [HTML elemek listája (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element):
-ha kíváncsi vagy, mi minden létezik még
+  ha kíváncsi vagy, mi minden létezik még
 - [Tailwind dokumentáció](https://tailwindcss.com/docs): a bal felső kereső a barátod
 - [Pszeudo osztályok (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
-és [pszeudo elemek (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements):
-a teljes lista, sokkal több van, mint amit a lecke mutat
+  és [pszeudo elemek (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements):
+  a teljes lista, sokkal több van, mint amit a lecke mutat
 - [Hover, focus és a többi állapot](https://tailwindcss.com/docs/hover-focus-and-other-states):
-az összes Tailwind előtag egy helyen
+  az összes Tailwind előtag egy helyen
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/):
-a legjobb flex referencia, minden tulajdonság egy oldalon, ábrákkal
+  a legjobb flex referencia, minden tulajdonság egy oldalon, ábrákkal
 - [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/):
-ugyanaz rácsokra
+  ugyanaz rácsokra
 - [Flexbox Froggy](https://flexboxfroggy.com/#hu): játék, amiben 24 pályán megtanulod a flexboxot.
 - [Grid Garden](https://cssgridgarden.com/#hu): ugyanez rácsokra
-
