@@ -1,0 +1,56 @@
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  margin: 0;
+  padding: 2rem;
+}
+.kartya {
+  background-color: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 320px;
+}
+
+.kartya-cim {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.kartya-leiras {
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.cimke {
+  display: inline-block;
+  background-color: #e2e8f0;
+  color: #334155;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 12px;
+}
+
+.nehezseg {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.sor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
